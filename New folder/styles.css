@@ -1,0 +1,126 @@
+/* Global Reset dhe font bazë */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: #222;
+    color: rgb(255, 245, 245);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li { 
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: url('https://cdn.pixabay.com/photo/2015/01/15/18/23/motorcycle-600777_960_720.jpg') no-repeat center center/cover;
+    color: rgb(8, 5, 5);
+}
+
+.hero-text {
+    display: inline-block;
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    text-align: center;  /* Ose mund të vendosësh 'left', nëse dëshiron që të jetë majtas */
+}
+
+
+
+.hero h1 {
+    font-size: 40px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #ff4500;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+/* Modelet Section */
+.models {
+    text-align: center;
+    padding: 70px 20px;  /* Përshtatur për më shumë hapësirë */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;  /* Hapësirë mes motorëve */
+    flex-wrap: wrap;
+}
+
+.model {
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    border: 2px solid #ccc;  /* Kufiri i dukshëm */
+    transition: transform 0.3s ease;
+}
+
+.model:hover {
+    transform: scale(1.05);  /* Zmadhohet kur kalon maus mbi të */
+}
+
+.model img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.model h3 {
+    margin: 10px 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: white;
+    margin-top: auto;  
+}
